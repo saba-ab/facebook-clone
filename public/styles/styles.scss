@@ -65,6 +65,15 @@ body {
           }
         }
       }
+      #success {
+        font-size: 16px;
+        color: green;
+        display: none;
+      }
+      #errorHandler {
+        font-size: 12px;
+        color: red;
+      }
       #name {
         display: none;
       }

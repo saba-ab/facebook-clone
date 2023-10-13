@@ -2,12 +2,10 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles/styles.css" />
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>facebook clone</title>
-    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script>
   </head>
   <body>
     <section>
@@ -44,8 +42,10 @@
                 placeholder="repeat Password"
               />
             </form>
+            <p id="errorHandler"></p>
+            <p id="success">user registered successfully</p>
             <button id="logIn">Log in</button>
-            <button id="register">register</button>
+            <button id="register" type="button">register</button>
             <a href="#">Forgot password?</a>
             <div class="line"></div>
             <button id="createAcc">Create new account</button>
@@ -54,6 +54,18 @@
         </div>
       </div>
     </section>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"
+      type="module"
+    ></script>
     <script type="module" src="/index.js"></script>
   </body>
 </html>

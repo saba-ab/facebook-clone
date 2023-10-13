@@ -64,6 +64,15 @@ body {
 .container .authorisation-registration .login-form form input ::placeholder {
   opacity: 0.7;
 }
+.container .authorisation-registration .login-form #success {
+  font-size: 16px;
+  color: green;
+  display: none;
+}
+.container .authorisation-registration .login-form #errorHandler {
+  font-size: 12px;
+  color: red;
+}
 .container .authorisation-registration .login-form #name {
   display: none;
 }
