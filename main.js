@@ -10,6 +10,7 @@ import {
   set,
   push,
   onValue,
+  remove,
 } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 import {
   getStorage,
@@ -139,15 +140,10 @@ function deletePostFromDb(event) {
   const postId = event.target.getAttribute("data-post-id");
   const uid = localStorage.getItem("uid");
 
-  const postRef = dbRef(db, `posts/${uid}/${postId}`);
-  postRef
-    .remove()
-    .then(() => {
-      postDiv.remove();
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
+  const postRef = dbRef(db, `posts/${postId}/${uid}`);
+  remove(postRef).catch((error) => {
+    console.error("Error:", error);
+  });
 }
 
 function renderPost(postData) {
