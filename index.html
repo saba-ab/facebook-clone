@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>facebook clone</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="logo-slogan">
+          <div class="logo">
+            <img src="./media/facebook-logo.svg" alt="facebook" />
+          </div>
+          <div class="slogan">
+            <h2>Connect with friends and the world around you on Facebook.</h2>
+          </div>
+        </div>
+        <div class="authorisation-registration">
+          <div class="login-form">
+            <form action="">
+              <input type="name" name="name" id="name" placeholder="name" />
+              <input
+                type="surname"
+                name="surname"
+                id="surname"
+                placeholder="surname"
+              />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <input
+                type="password"
+                name="repeatPassword"
+                id="repeatPassword"
+                placeholder="repeat Password"
+              />
+            </form>
+            <p id="errorHandler"></p>
+            <p id="success">user registered successfully</p>
+            <button id="logIn">Log in</button>
+            <button id="register" type="button">register</button>
+            <a href="#">Forgot password?</a>
+            <div class="line"></div>
+            <button id="createAcc">Create new account</button>
+            <button id="returnToLogIn">return to log in</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(234, 232, 232, 0.554);
+}
+
+.header {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header svg {
+  height: 30px;
+  width: 30px;
+  fill: rgb(76, 75, 75);
+}
+.header .icon-and-search {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header .icon-and-search svg {
+  fill: rgb(2, 2, 168);
+  width: 40px;
+  height: 40px;
+}
+.header .icon-and-search input {
+  height: 40px;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(222, 222, 222);
+  border: none;
+}
+.header .navigation {
+  display: flex;
+  gap: 20px;
+}
+.header .navigation div {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.header .navigation div:hover {
+  background-color: rgb(234, 232, 232);
+  cursor: pointer;
+}
+.header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.header .menu div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(234, 232, 232, 0.554);
+}
+.header .menu div:hover {
+  cursor: pointer;
+  background-color: rgb(234, 232, 232);
+}
+.header .menu svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(53, 52, 52);
+}
+.header .menu img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container {
+  background-color: rgba(234, 232, 232, 0.554);
+  display: flex;
+}
+.container aside {
+  width: 20%;
+  min-width: 250px;
+}
+.container aside ul li {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+.container aside ul li img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container aside ul li:hover {
+  cursor: pointer;
+  background-color: rgb(234, 232, 232);
+}
+.container .news-feed .post-input {
+  margin-top: 30px;
+  width: 600px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .news-feed .post-input .input-text {
+  padding: 10px;
+}
+.container .news-feed .post-input .input-text img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .news-feed .post-input .input-text textarea {
+  width: calc(100% - 60px);
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: rgba(234, 232, 232, 0.554);
+  resize: none;
+  font-size: 16px;
+  outline: none;
+  margin-left: 15px;
+}
+.container .news-feed .post-input .line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(177, 177, 177);
+}
+.container .news-feed .post-input .live-photo-feeling {
+  padding: 10px;
+}
+.container .news-feed .post-input .live-photo-feeling ul {
+  display: flex;
+  justify-content: space-between;
+}
+.container .news-feed .post-input .live-photo-feeling ul li {
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+.container .news-feed .post-input .live-photo-feeling img {
+  width: 30px;
+}
+.container .news-feed .posts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.container .news-feed .posts .post {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.container .news-feed .posts .post .user-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.container .news-feed .posts .post .user-post .remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.container .news-feed .posts .post img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.container .news-feed .posts .post .like-comment-share {
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.container .news-feed .posts .post .like-comment-share div {
+  width: 150px;
+  min-width: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.container .news-feed .posts .post .comment {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .news-feed .posts .post .comment img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.container .news-feed .posts .post .commentInput input {
+  border: none;
+  background-color: rgba(234, 232, 232, 0.554);
+  border-radius: 10px;
+  height: 30px;
+  padding: 10px;
+  width: calc(100% - 50px);
+}
+
+/*# sourceMappingURL=news-feed.css.map */
